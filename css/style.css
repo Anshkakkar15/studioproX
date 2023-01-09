@@ -1,0 +1,493 @@
+:root {
+  --primary: rgb(20, 32, 66);
+  --primary-bg-color: #1a4ab9;
+  --primartHover: #3a496d;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,300;1,200&display=swap");
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.nav-container {
+  padding: 23px 0;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 7rem;
+  z-index: 1000;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links ul li a,
+.cart {
+  padding: 0 16px;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cart span {
+  color: rgb(0, 132, 254);
+}
+
+.right-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navigatinbutton {
+  background-color: var(--primary);
+  padding: 15px 20px;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.Navigatinbutton:hover {
+  background-color: var(--primartHover);
+  transform: translate3d(0px, 3px, 0.01px);
+  transition: 0.5s linear;
+}
+
+.circle {
+  background: var(--primary);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  height: 5px;
+  width: 32px;
+  background-color: white;
+  z-index: 100;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -240%);
+  margin: 5px 0;
+  border-radius: 20px;
+}
+
+.line1 {
+    transform: rotate(-49deg);
+    position: absolute;
+    transition: .2s linear;
+    top: 17px;
+    left: 8px;
+}
+
+.line2 {
+    transform: rotate(49deg);
+    position: absolute;
+    transition: .2s linear;
+    top: 17px;
+    left: 8px;
+}
+
+
+/* Banner css */
+.banner {
+  width: 70%;
+  margin: 5rem auto;
+  margin-bottom: 12rem;
+  z-index: -1;
+  transition: 1s linear;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0%);
+}
+
+.bannerIntersection {
+  opacity: 1;
+  visibility: visible;
+  transition: 1s linear;
+  transform: translateY(8%);
+}
+
+.banner .heading h1 {
+  color: var(--primary);
+  font-size: 68px;
+  line-height: 1.118em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.banner .headingDetails p {
+  text-align: center;
+  color: #6d7fa8;
+  font-size: 18px;
+  line-height: 1.667em;
+  font-weight: 500;
+  display: block;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 20px;
+}
+
+.banner .contact .contact-us {
+  background-color: var(--primary);
+  padding: 20px 25px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+.banner .contact .our-services {
+  background-color: #ecf0fc;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 15px;
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+.banner .contact .contact-us:hover {
+  background-color: var(--primartHover);
+  transform: translate3d(0px, 3px, 0.01px);
+  transition: 0.5s linear;
+}
+
+.banner .contact .our-services:hover {
+  background-color: #cad4ec;
+  transform: translate3d(0px, 3px, 0.01px);
+  transition: 0.5s linear;
+}
+
+.partners {
+  display: grid;
+  clear: both;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  place-items: center;
+  line-height: 1.667em;
+  margin: 12px 35px;
+  padding: 50px 0;
+  transition: 1s linear;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0%);
+}
+
+.partnerObserver {
+  opacity: 1;
+  visibility: visible;
+  transition: 1s linear;
+  transform: translateY(15%);
+}
+
+.google {
+  margin: 12px 0;
+}
+
+.facebook {
+  margin: 12px 0;
+}
+
+.youtube {
+  margin: 12px 0;
+}
+
+.piintrest {
+  margin: 12px 0;
+}
+
+.twitch {
+  margin: 12px 0;
+}
+
+.webflow {
+  margin: 12px 0;
+}
+
+.container {
+  background-color: var(--primary-bg-color);
+  padding: 100px 0;
+  transition: 2s linear;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0%);
+}
+
+.containerCardObserver {
+  opacity: 1;
+  visibility: visible;
+  transition: 1s linear;
+  transform: translateY(5%);
+}
+
+.sectionCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 40px;
+  margin: 50px 0;
+}
+
+.card-body:hover {
+  transform: translate3d(0px, -6px, 0.01px);
+  transition: 0.1s linear;
+}
+
+.card-body img {
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.sectionContainer {
+  display: block;
+  width: 95%;
+  margin: auto;
+}
+
+.sectionHeader {
+  display: block;
+  width: 65%;
+  text-align: center;
+  margin: auto;
+  color: var(--white);
+}
+
+.sectionHeader .heading {
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 30px;
+  color: var(--white);
+}
+
+.sectionHeader .servicesHeader {
+  font-size: 52px;
+  line-height: 1.231em;
+  font-weight: 700;
+}
+
+.card-body {
+  background-color: var(--white);
+  padding: 50px 34px;
+  overflow: hidden;
+  border: 1px solid #cad4ec;
+  border-radius: 18px;
+  background-color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transform: translateY(0%);
+}
+
+.card-head {
+  color: #142042;
+  font-size: 25px;
+  line-height: 2em;
+  font-weight: 700;
+}
+
+.card-content {
+  margin-bottom: 16px;
+  color: #6d7fa8;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.667em;
+  font-weight: 500;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 20px;
+}
+
+.container .contact .contact-us {
+  background-color: #ff2b2a;
+  padding: 25px 30px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+.container .contact .our-services {
+  background-color: #ecf0fc;
+  padding: 25px 30px;
+  border: none;
+  border-radius: 15px;
+  color: var(--primary);
+  font-size: 22px;
+  font-weight: 400;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+.container .contact .contact-us:hover {
+  background-color: #ff5a65;
+  transform: translate3d(0px, 3px, 0.01px);
+  transition: 0.5s linear;
+}
+
+.container .contact .our-services:hover {
+  background-color: #cad4ec;
+  transform: translate3d(0px, 3px, 0.01px);
+  transition: 0.5s linear;
+}
+section .main{
+    margin: 15rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+section .team{
+    padding: 0 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 2.5s linear;
+}
+section .teamObserver {
+    opacity: 1;
+    visibility: visible;
+  }
+section .head{
+    color: #0084fe;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 12px;
+}
+section .heading{
+    color: #142042;
+    font-size: 52px;
+    line-height: 1.231em;
+    font-weight: 700;
+}
+section .content{
+    color: #6d7fa8;
+    font-size: 18px;
+    padding: 10px 0;
+    line-height: 1.667em;
+    font-weight: 500;
+}
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 15px 0;
+}
+.numbers .client{
+    color: var(--primary);
+    font-size: 50px;
+    font-weight: 600;
+    align-items: center;
+  }
+  .numbers .teamContent{
+    color: #6d7fa8;
+    font-size: 18px;
+    font-weight: 500;
+}
+  .blue{
+    color: #0084fe;
+    font-size: 35px;
+    font-weight: 800;
+    margin: -10px;
+  }
+  .red{
+    color: #ff2b2a;
+    font-size: 35px;
+    font-weight: 800;
+    margin: -10px;
+  }
+.contact-us {
+    background-color:var(--primary);
+    padding: 25px 30px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 15px 0px;
+    cursor: pointer;
+  }
+   .contact-us:hover {
+    background-color: var(--primartHover);
+    transform: translate3d(0px, 3px, 0.01px);
+    transition: 0.5s linear;
+  }
+.team-img{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: 1s linear;
+    padding: 12px;
+}
+.teamImgObserver{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+}
+.process{
+  width: 50%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 200px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s linear;
+  transform: translateY(0%);
+}
+.processIntersection{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(5%); 
+}

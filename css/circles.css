@@ -1,0 +1,222 @@
+.left-banner {
+    width: 100%;
+    float: left;
+    display: grid;
+    grid-template-columns: 172px 366px 171px 77px 270px;
+    justify-items: center;
+    align-items: center;
+    transition: 1s linear;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.right-banner {
+    display: grid;
+    float: right;
+    grid-template-columns: 172px 220px 366px 170px;
+    justify-content: center;
+    align-items: center;
+    transition: 1s linear;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.leftObserver {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-2%);
+}
+
+.rightObserver {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.redCircle {
+    height: 125px;
+    width: 220px;
+    border-radius: 150px 150px 0 0;
+    background-color: #ff2b2a;
+    transform: rotateZ(450deg);
+}
+
+
+.userImage img {
+    height: 225px;
+    width: 415px;
+    border-radius: 160px;
+}
+
+.greenCircle {
+    height: 125px;
+    width: 220px;
+    border-radius: 150px 150px 0 0;
+    background-color: #39b34a;
+    transform: rotateZ(-450deg);
+}
+
+.rightGreenCircle {
+    height: 125px;
+    width: 220px;
+    border-radius: 150px 150px 0 0;
+    background-color: #39b34a;
+    transform: rotateZ(450deg);
+}
+
+.userTwo img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.yellowCircle {
+    height: 125px;
+    width: 220px;
+    border-radius: 150px 150px 0 0;
+    background-color: #ffbe17;
+    transform: rotateZ(-450deg);
+}
+
+.blueCircle {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    background-color: #0084fe;
+}
+
+@media (max-width:1000px) {
+    .left-banner{
+    grid-template-columns: 127px 260px 125px 46px 222px;
+    }
+    .right-banner{
+        grid-template-columns: 133px 177px 253px 135px;
+    }
+    .redCircle {
+        height: 86px;
+        width: 180px;
+    }
+
+    .userImage img {
+        height: 177px;
+        width: 300px;
+    }
+    .userTwo img{
+      width: 176px;
+      height: 171px;
+    }
+
+    .greenCircle {
+        height: 86px;
+        width: 180px;
+    }
+    .rightGreenCircle{
+        height: 86px;
+        width: 180px;
+    }
+
+    .yellowCircle {
+        height: 86px;
+        width: 180px;
+    }
+
+    .blueCircle {
+        height: 190px;
+        width: 180px;
+    }
+}
+@media (max-width:750px){
+         .left-banner{
+            margin: 20px 0;
+            grid-template-columns: 93px 187px 92px 38px 138px;
+        }
+        .right-banner{
+            grid-template-columns: 87px 126px 191px 90px;
+        }
+        .redCircle {
+            height: 65px;
+            width: 110px;
+        }
+    
+        .userImage img {
+            height: 115px;
+            width: 215px;
+        }
+        .userTwo img{
+            width: 126px;
+            height: 121px;
+          }
+    
+        .greenCircle {
+            height: 65px;
+            width: 110px;
+        }
+        .rightGreenCircle {
+            height: 65px;
+            width: 110px;
+        }
+    
+        .yellowCircle {
+            height: 65px;
+            width: 110px;
+        }
+    
+        .blueCircle {
+            height: 115px;
+            width: 110px;
+        }
+}
+
+@media (max-width:540px){
+    .left-banner{
+   grid-template-columns: 70px 208px 67px 65px;
+   }
+   .right-banner{
+    grid-template-columns: 87px 126px 191px 90px;
+}
+   .redCircle {
+       height: 65px;
+       width: 110px;
+   }
+
+   .userImage img {
+       height: 115px;
+       width: 215px;
+   }
+   .userTwo img{
+    width: 126px;
+    height: 121px;
+  }
+   .greenCircle {
+       height: 65px;
+       width: 110px;
+   }
+   .rightGreenCircle {
+       height: 65px;
+       width: 110px;
+   }
+
+   .yellowCircle {
+    height: 65px;
+    width: 110px;
+   }
+
+   .blueCircle {
+       display: none;
+   }
+}
+
+@media (max-width:420px){
+    .left-banner{
+   grid-template-columns: 70px 208px 67px;
+    }
+    .right-banner{
+   grid-template-columns:  85px 124px 67px;
+
+    }
+   .yellowCircle {
+    display: none;
+    }
+}
