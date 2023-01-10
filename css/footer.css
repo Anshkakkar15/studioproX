@@ -1,0 +1,215 @@
+footer{
+    min-height: 75vh;
+    background-color: #1a4ab9;
+}
+.footer{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+.top-head{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px , 1fr));
+    align-items: center;
+    justify-items: start;
+    grid-column-gap: 25px;
+}
+.side-bar{
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+}
+
+.yellow_footer_circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #ffbe17;
+}
+.blue_footer_circle{
+    height: 200px;
+    width: 425px;
+    border-radius: 160px;
+    background-color: #0084fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+    font-size: 18px;
+    padding: 50px;
+    color: #ecf0fc;
+}
+.green_footer_circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #39b34a;
+}
+
+.bottom-head{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(320px , 1fr));
+    grid-gap: 30px;
+    padding-top: 25px;
+}
+.bottom-head .sub-heading{
+    color: #ecf0fc;
+    font-size: 20px;
+    line-height: 1.1em;
+    margin-bottom: 40px;
+}
+ .bottom-head  ul{
+    list-style: none;
+ }
+ .nav-content{
+    display: flex;
+    grid-column-gap: 35px;
+ }
+ .bottom-head  ul li{
+    margin-bottom: 18px;
+    padding-left: 0px;
+    line-height: 1.111em;
+ }
+ .footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px , 1fr));
+    grid-gap: 50px;
+ }
+ 
+ .bottom-head a{
+    color: #cad4ec;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s ease-in-out;
+}
+.footer-links:hover{
+    color: white;
+ }
+
+ .footer-card{
+    max-width: 531px;
+    padding: 53px;
+    border-color: #2458d1;
+    background-color: #2458d1;
+    position: relative;
+    border-radius: 25px;
+ }
+ .footer-card-heading{
+    font-size: 28px;
+    line-height: 1.429em;
+    font-weight: 700;
+    color: white;
+ }
+ .footer-card-para{
+    font-size: 15px;
+    line-height: 2em;
+    font-weight: 700;
+    color: #cad4ec;
+    margin: 3px 0;
+ }
+
+ input[type=email]{
+    min-height: 72px;
+    width:100%;
+    margin-bottom: 0px;
+    padding: 16px 24px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cad4ec;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #142042;
+    font-size: 18px;
+    line-height: 1.111em;
+    font-weight: 500;
+ }
+ input[type=submit]{
+    position: absolute;
+    padding: 18px 28px;
+    border-radius: 10px;
+    border: none;
+    background-color: #142042;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    /* top: 166px;
+    right: 108px; */
+ }
+
+@media (max-width:1200px) {
+
+    .logo{
+        display: grid;
+        place-items: center;
+    }
+    .side-bar{
+        margin: 25px 0;
+        place-items:center ;
+    }
+    .yellow_footer_circle{
+        height: 140px;
+        width: 140px;
+    }
+    .blue_footer_circle{
+        height: 140px;
+        width: 400px;
+        line-height: 1.5em;
+        font-size: 15px;
+    }
+    .green_footer_circle{
+        height: 140px;
+        width: 140px;
+    }
+
+}
+@media (max-width:890px) {
+    .logo{
+        margin-left: -64px;
+    }
+    .top-head{
+        place-items: center;
+        align-items: center;
+    }
+    .yellow_footer_circle{
+        height: 100px;
+        width: 100px;
+    }
+    .blue_footer_circle {
+        height: 100px;
+        width: 292px;
+        line-height: 1.2em;
+        font-size: 14px;
+    }
+    .green_footer_circle{
+        height: 100px;
+        width: 100px;
+    }
+}
+@media (max-width:800px) {
+    .logo{
+        margin: 0;
+    }
+}
+
+    @media (max-width:500px) {
+        .footer-card{
+            padding: 30px;
+        }
+        .green_footer_circle{
+            display: none;
+        }
+        .yellow_footer_circle{
+            display: none;
+        }
+        .blue_footer_circle{
+            width: 350px;
+        }
+    }
+    @media (max-width:350px) {
+        .footer{
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+    }
