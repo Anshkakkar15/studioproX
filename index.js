@@ -28,6 +28,7 @@ let containerCard = document.querySelector(".container");
 let team = document.querySelector(".team");
 let teamImg = document.querySelector(".team-img");
 let process = document.querySelector(".process");
+let slider1 = document.querySelector(".main-container");
 
 function interSectionObserver(component, className) {
   const observer = new IntersectionObserver(
@@ -50,5 +51,19 @@ interSectionObserver(containerCard, "containerCardObserver");
 interSectionObserver(team, "teamObserver");
 interSectionObserver(teamImg, "teamImgObserver");
 interSectionObserver(process, "processIntersection");
+interSectionObserver(process, "processIntersection");
+interSectionObserver(slider1, "main-container-intersection");
 
 
+
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+});
