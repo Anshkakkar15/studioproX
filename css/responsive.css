@@ -103,7 +103,7 @@
     .cart {
         position: absolute;
         top: 40px;
-        right: 50px;
+        right: 55px;
     }
 
     .Navigatinbutton {
@@ -202,6 +202,11 @@
         visibility: hidden;
         transition: 2s linear;
         transform: translateY(0%);
+      }
+      .processIntersection{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(5%); 
       }
 }
 
