@@ -33,7 +33,9 @@ let slider1 = document.querySelector(".main-container");
 function interSectionObserver(component, className) {
   const observer = new IntersectionObserver(
     (entries) => {
+      // const ent = entries[0];
       const ent = entries[0];
+
       ent.isIntersecting ? component.classList.add(className) : null;
     },
     {
