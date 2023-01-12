@@ -8,13 +8,6 @@ navigation.addEventListener("click", function () {
   navLinks.classList.toggle("navActive");
 });
 
-let line = document.querySelector(".line");
-let line1 = document.querySelector("#line1");
-let line2 = document.querySelector("#line2");
-line.addEventListener("click", function () {
-  line1.classList.toggle("line1");
-  line2.classList.toggle("line2");
-});
 
 window.addEventListener("load", function () {
   document.querySelector("body").classList.add("loaded");
@@ -33,9 +26,7 @@ let slider1 = document.querySelector(".main-container");
 function interSectionObserver(component, className) {
   const observer = new IntersectionObserver(
     (entries) => {
-      // const ent = entries[0];
       const ent = entries[0];
-
       ent.isIntersecting ? component.classList.add(className) : null;
     },
     {
@@ -55,8 +46,6 @@ interSectionObserver(teamImg, "teamImgObserver");
 interSectionObserver(process, "processIntersection");
 interSectionObserver(process, "processIntersection");
 interSectionObserver(slider1, "main-container-intersection");
-
-
 
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
